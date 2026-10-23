@@ -1,0 +1,408 @@
+\documentclass[12pt,a4paper]{article}
+
+% --- KHAI BÁO GÓI CHUẨN CHO XELATEX VÀ TIẾNG VIỆT ---
+\usepackage{fontspec}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{array}
+\definecolor{mycurve}{RGB}{210, 40, 110}
+\usepackage{pgfplots}	
+\usepackage[shortlabels]{enumitem}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{calc, angles, quotes}
+\usepackage{tkz-tab}
+\usepackage{graphicx}
+% Thiết lập lề giấy
+\geometry{
+	top=1.5cm,
+	bottom=2cm,
+	left=1.8cm,
+	right=1.8cm
+}
+
+% Định nghĩa màu sắc
+\definecolor{mypink}{RGB}{215, 0, 115} 
+\definecolor{myred}{RGB}{200, 0, 0}     
+\definecolor{mytens}{RGB}{255, 0, 0}    
+
+% Định dạng lại các ký hiệu A, B, C, D
+\newcommand{\myA}{\textcolor{myred}{\textbf{\textit{A.}}}}
+\newcommand{\myB}{\textcolor{myred}{\textbf{\textit{B.}}}}
+\newcommand{\myC}{\textcolor{myred}{\textbf{\textit{C.}}}}
+\newcommand{\myD}{\textcolor{myred}{\textbf{\textit{D.}}}}
+
+\begin{document}
+	
+	% --- PHẦN HEADER ---
+		\begin{center}
+			{\Large \textbf{ĐỀ THI GIỮA HỌC KÌ I}}\\[0.1cm]
+			{\textbf{NĂM HỌC: 2026 -- 2027}}\\
+			{\textit{Môn Toán 12}}\\
+			{\textit{\underline{Thời gian làm bài 90 phút, không kể thời gian phát đề}}}
+		\end{center}
+	\vspace{0.3cm}
+	
+	% --- PHẦN 1 ---
+	\noindent
+	\colorbox{mypink}{\textcolor{white}{\textbf{PHẦN I.}}} \textbf{\textcolor{mypink}{Câu trắc nghiệm nhiều phương án lựa chọn}}
+	
+	\noindent
+	\textit{Thí sinh trả lời từ câu 1 đến câu 12. Mỗi câu hỏi thí sinh chỉ chọn một phương án.}
+	
+	\vspace{0.4cm}
+	
+	% --- CÂU 1 ---
+	\noindent
+	\textcolor{mypink}{\textbf{Câu 1.}} Cho hàm số \(y = f(x)\) có bảng biến thiên như sau:
+	
+	\begin{center}
+		\begin{tikzpicture}[scale=0.9, every node/.style={font=\small}]
+			% Vẽ khung bảng
+			\draw (0,0) -- (11,0);       
+			\draw (0,-0.8) -- (11,-0.8); 
+			\draw (0,-1.6) -- (11,-1.6); 
+			\draw (0,-4.5) -- (11,-4.5); 
+			
+			% Vẽ cột dọc
+			\draw (0,0) -- (0,-4.5);     
+			\draw (2,0) -- (2,-4.5);     % Cột phân cách
+			
+			% Điền giá trị hàng x
+			\node at (1, -0.4) {\(x\)};
+			\node at (3, -0.4) {\(-\infty\)};
+			\node at (5.5, -0.4) {\(-1\)};
+			\node at (8, -0.4) {\(2\)};
+			\node at (10.5, -0.4) {\(+\infty\)};
+			
+			% Điền giá trị hàng f'(x)
+			\node at (1, -1.2) {\(f'(x)\)};
+			\node at (4.25, -1.2) {\(+\)};
+			\node at (5.5, -1.2) {\(0\)};
+			\node at (6.75, -1.2) {\(-\)};
+			\node at (8, -1.2) {\(0\)};
+			\node at (9.25, -1.2) {\(+\)};
+			
+			% Hàng f(x)
+			\node at (1, -3) {\(f(x)\)};
+			
+			% Các giá trị
+			\node at (3, -4.2) {\(-\infty\)};
+			\node at (5.5, -2.2) {\(1\)};
+			\node at (8, -4.2) {\(-2\)};
+			\node at (10.5, -2.2) {\(+\infty\)};
+			
+			% Vẽ mũi tên
+			\draw[->, thick, mypink] (3.3, -4) -- (5.2, -2.5);
+			\draw[->, thick, mypink] (5.8, -2.5) -- (7.7, -4);
+			\draw[->, thick, mypink] (8.3, -4) -- (10.2, -2.5);
+		\end{tikzpicture}
+	\end{center}
+	
+	\vspace{0.1cm}
+	\noindent
+	Giá trị cực tiểu của hàm số đã cho bằng\\
+	\noindent
+	\myA\ \(-2\). \hfill \myB\ \(-1\). \hfill \myC\ \(1\). \hfill \myD\ \(2\).
+	
+	\vspace{0.5cm}
+	
+	% --- CÂU 2 ---
+	\noindent
+	\textcolor{mypink}{\textbf{Câu 2.}} Đường thẳng nào dưới đây là tiệm cận ngang của đồ thị hàm số \(y = \frac{x - 3}{5x - 16}\)?\\
+	\noindent
+	\myA\ \(y = \frac{1}{5}\). \hfill \myB\ \(x = \frac{1}{5}\). \hfill \myC\ \(y = \frac{16}{5}\). \hfill \myD\ \(x = \frac{16}{5}\).
+	
+	\vspace{0.5cm}
+	
+	% --- CÂU 3 ---
+	\noindent
+	\textcolor{mypink}{\textbf{Câu 3.}} Cho hàm số \(y = f(x)\) có bảng biến thiên như hình dưới. Số đường tiệm cận ngang của đồ thị hàm số đã cho là
+	
+	\vspace{0.3cm}
+	\hspace*{2cm} % Đẩy bảng sang phải 2cm. Bạn có thể thay đổi số 2cm thành 1cm, 3cm, 0.5cm...
+    \begin{tikzpicture}[scale=0.85, xshift=2cm, every node/.style={font=\normalsize}]
+
+	
+	% --- 1. VẼ CÁC ĐƯỜNG KẺ NGANG ---
+	% Thu hẹp chiều rộng tổng thể (từ 0 đến 10 thay vì 12)
+	\draw[mypink, thick] (0, 0) -- (10, 0);         % Đường trên cùng
+	\draw[mypink, thick] (0, -1) -- (10, -1);       % Đường dưới x (và trên y')
+	\draw[mypink, thick] (0, -2) -- (10, -2);       % Đường dưới y'
+	\draw[mypink, thick] (0, -4) -- (10, -4);       % Đường dưới cùng (thu hẹp chiều cao)
+	
+	% --- 2. VẼ CÁC ĐƯỜNG KẺ DỌC ---
+	\draw[mypink, thick] (0, 0) -- (0, -4);         % Viền trái
+	\draw[mypink, thick] (2, 0) -- (2, -4);         % Cột phân cách nhãn x, y', y
+	
+	% 2 đường kẻ tiệm cận: Hẹp lại và chỉ nối từ hàng y' đến hàng y
+	\draw[mypink, thick] (5.9, -1) -- (5.9, -4);     
+	\draw[mypink, thick] (6.1, -1) -- (6.1, -4);     
+	
+	% --- 3. ĐIỀN CÁC GIÁ TRỊ CHỮ ---
+	
+	% Hàng x
+	\node at (1, -0.5) {\(x\)};
+	\node at (3, -0.5) {\(-\infty\)};
+	\node at (6, -0.5) {\(1\)};                     % Số 1 nằm giữa 2 nét đứt
+	\node at (9, -0.5) {\(+\infty\)};
+	
+	% Hàng y'
+	\node at (1, -1.5) {\(y'\)};
+	\node at (4, -1.5) {\(+\)};
+	\node at (8, -1.5) {\(+\)};
+	
+	% Hàng y (nhãn)
+	\node at (1, -3) {\(y\)};
+	
+	% Các giá trị trong bảng
+	\node at (3, -3.7) {\(2\)};       
+	\node at (4.8, -2.3) {\(+\infty\)}; 
+	\node at (6.6, -3.7) {\(3\)};       
+	\node at (8.6, -2.3) {\(5\)};      
+	
+	% --- 4. VẼ MŨI TÊN ---
+	\draw[->, thick, mypink] (3.2, -3.5) -- (4.7, -2.5); % Mũi tên trái
+	\draw[->, thick, mypink] (6.9, -3.5) -- (8.3, -2.5); % Mũi tên phải
+	
+\end{tikzpicture}
+	
+	\vspace{0.1cm}
+	\noindent
+	\myA\ \(2\). \hfill \myB\ \(3\). \hfill \myC\ \(1\). \hfill \myD\ \(4\).
+	
+	\noindent
+	\textcolor{mypink}{\textbf{Câu 4.}} Cho hàm số \(y = f(x)\) có đạo hàm \(f'(x) = (x - 22)(x + 2)^2(x - 5), \forall x \in \mathbb{R}\). Điểm cực tiểu của hàm số đã cho là\\
+	\noindent
+	\myA\ \(x = 22\). \hfill \myB\ \(x = 5\). \hfill \myC\ \(x = -2\). \hfill \myD\ \(x = -22\).
+	
+	\vspace{0.4cm}
+	
+	\noindent
+	\textcolor{mypink}{\textbf{Câu 5.}} Hàm số \(y = -\frac{1}{3}x^3 + 12x^2 - 44x + 22\) đồng biến trên khoảng nào dưới đây?\\
+	\noindent
+	\myA\ \((2; 22)\). \hfill \myB\ \((-\infty; 2)\). \hfill \myC\ \((22; +\infty)\). \hfill \myD\ \((-2; 22)\).
+	
+	\vspace{0.4cm}
+	
+	\noindent
+	\textcolor{mypink}{\textbf{Câu 6.}} Nồng độ oxygen trong hồ theo thời gian \(t\) cho bởi công thức \(y(t) = 5 - \frac{15t}{9t^2 + 1}\), với \(y\) được tính theo mg/l và \(t\) được tính theo giờ, \(t \ge 0\). Hỏi nồng độ oxygen trong hồ không vượt quá giá trị nào khi thời gian \(t\) rất lớn?\\
+	\noindent
+	\myA\ \(-\frac{5}{3}\). \hfill \myB\ \(5\). \hfill \myC\ \(\frac{5}{3}\). \hfill \myD\ \(+\infty\).
+	
+	% --- CÂU 7 ---
+	\noindent
+	\textcolor{mypink}{\textbf{Câu 7.}} Tìm giá trị nhỏ nhất của hàm số \(y = \frac{x^2+5}{x-2}\) trên đoạn \([3; 6]\).\\
+	\noindent
+	\myA\ \(\min\limits_{[3;6]} y = 10\). \hfill \myB\ \(\min\limits_{[3;6]} y = 14\). \hfill \myC\ \(\min\limits_{[3;6]} y = \frac{41}{4}\). \hfill \myD\ \(\min\limits_{[3;6]} y = 5\).
+	
+	\vspace{0.4cm}
+	
+	% --- CÂU 8 ---
+	\noindent
+	\textcolor{mypink}{\textbf{Câu 8.}} Phương trình đường tiệm cận ngang của đồ thị hàm số \(y = x - \sqrt{x^2+2x+3}\) là\\
+	\noindent
+	\myA\ \(y = -1\). \hfill \myB\ \(y = 2\). \hfill \myC\ \(y = 1\). \hfill \myD\ \(y = 0\).
+	
+	\vspace{0.4cm}
+	
+	% --- CÂU 9 ---
+	\noindent
+	\textcolor{mypink}{\textbf{Câu 9.}} Cho hàm số \(y = f(x)\) có đồ thị là đường cong như hình vẽ sau. Hàm số đã cho đồng biến trên khoảng nào dưới đây?
+		\begin{center}
+			
+		\includegraphics[width=0.2\textwidth]{hinh1241}
+\end{center}
+
+	\vspace{0.1cm}
+	\noindent
+	\myA\ \((-1;0)\). \hfill \myB\ \((-\infty;-1)\). \hfill \myC\ \((0;1)\). \hfill \myD\ \((1;+\infty)\).
+	
+	\vspace{0.4cm}
+	
+	% --- CÂU 10 ---
+	\noindent
+	\textcolor{mypink}{\textbf{Câu 10.}} Hàm số \(y = \log_{22}(44x - x^2)\) đồng biến trên khoảng nào trong các khoảng dưới đây?\\
+	\noindent
+	\myA\ \((22; 44)\). \hfill \myB\ \((0; 44)\). \hfill \myC\ \((0; 22)\). \hfill \myD\ \((22; +\infty)\).
+	
+	\vspace{0.4cm}
+	
+	% --- CÂU 11 ---
+	\noindent
+	\textcolor{mypink}{\textbf{Câu 11.}} Hằng ngày mực nước của một con kênh lên xuống theo thủy triều. Độ sâu \(h\) (m) của mực nước trong kênh tại thời điểm \(t\) (h) (\(0 \le t \le 24\)) trong ngày được xác định bởi công thức \(h = 2\cos\left(\frac{\pi t}{12} + \frac{\pi}{3}\right) + 5\). Gọi \((a; b)\) là khoảng thời gian trong ngày mà độ sâu của mực nước trong kênh tăng dần. Tính giá trị của \(a + b\).\\
+	\noindent
+	\myA\ \(28\). \hfill \myB\ \(12\). \hfill \myC\ \(8\). \hfill \myD\ \(44\).
+	
+	\vspace{0.4cm}
+	
+	% --- CÂU 12 ---
+	\noindent
+	\textcolor{mypink}{\textbf{Câu 12.}} Giá trị lớn nhất của hàm số \(y = \begin{cases} x^2 - 1 & \text{nếu } -2 \le x \le 1 \\ 2x - 2 & \text{nếu } 1 < x \le 3 \\ -x + 7 & \text{nếu } 3 < x \le 5 \end{cases}\) là\\
+	\noindent
+	\myA\ \(4\). \hfill \myB\ \(3\). \hfill \myC\ \(-1\). \hfill \myD\ \(2\).
+	
+	\noindent
+	\colorbox{mypink}{\textcolor{white}{\textbf{PHẦN II.}}} \textbf{\textcolor{mypink}{Câu trắc nghiệm đúng sai}}
+	
+	\noindent
+	\textit{Thí sinh trả lời từ câu 1 đến câu 4. Trong mỗi ý a), b), c), d) ở mỗi câu, chọn đúng hoặc sai.}
+	
+	\vspace{0.4cm}
+	
+	\noindent
+	\textcolor{mypink}{\textbf{Câu 1.}} Cho hàm số \(y = \frac{x^2-x+4}{x-1}\) có đồ thị \((C)\) và \(A, B\) là hai điểm cực trị của \((C)\).
+	
+	\vspace{0.4cm}
+	\begin{enumerate}[label=\alph*), leftmargin=1.5cm, itemsep=0.2cm]
+		\item Đạo hàm của hàm số là \(y' = \frac{x^2-2x-3}{(x-1)^2}\).
+		\item Hai điểm cực trị \(A\) và \(B\) nằm ở hai phía của trục tung.
+		\item Đường thẳng đi qua hai điểm cực trị \(A, B\) tạo với hai trục tọa độ một tam giác có diện tích bằng 0,25.
+		\item Xét điểm \(M\) di động trên đường thẳng \(\Delta\) có phương trình \(x - y + 22 = 0\). Giá trị nhỏ nhất của biểu thức \(P = MA^2 + MB^2\) bằng 524.
+	\end{enumerate}
+	
+	% --- CÂU 2 ---
+	\noindent
+	\textcolor{mypink}{\textbf{Câu 2.}} Một chất điểm chuyển động trên trục \(Ox\) có phương trình vị trí (tọa độ) phụ thuộc vào thời gian là \(x(t) = t^3 - 6t^2 + 9t + 22\), trong đó thời gian \(t > 0\) được tính bằng giây và \(x\) được tính bằng mét.
+	\begin{enumerate}[label=\alph*), leftmargin=1.2cm, itemsep=0.1cm]
+		\item Vận tốc của chất điểm tại thời điểm \(t = 2\) giây là \(-3\) (m/s).
+		\item Gia tốc của chất điểm bằng \(0\) (m/s\(^2\)) tại thời điểm \(t = 2\) giây.
+		\item Trong \(4\) giây đầu tiên, độ dịch chuyển của chất điểm là \(4\) (m).
+		\item Trong \(4\) giây đầu tiên, tổng quãng đường chất điểm đã đi được là \(22\) (m).
+	\end{enumerate}
+	
+	\vspace{0.4cm}
+	
+	% --- CÂU 3 ---
+	\noindent
+	\begin{minipage}[t]{0.68\textwidth}
+		\textcolor{mypink}{\textbf{Câu 3.}} Từ hình vuông có cạnh bằng \(6\) người ta cắt bỏ các tam giác vuông cân tạo thành hình tô đậm như hình vẽ. Sau đó người ta gấp thành hình hộp chữ nhật không nắp. Gọi \(x\) là chiều cao của khối hộp chữ nhật tạo thành.
+		\begin{enumerate}[label=\alph*), leftmargin=1.2cm, itemsep=0.1cm]
+			\item Cạnh đáy của khối hộp chữ nhật là \(3\sqrt{2} - x\sqrt{2}\) với \(0 < x < 3\sqrt{2}\).
+			\item Thể tích của khối hộp được tính theo công thức
+			\[
+			V(x) = 4x^3 - 24x^2 + 36x
+			\]
+			\item Hàm số thể tích \(V(x)\) đồng biến trên toàn bộ khoảng \((0; \sqrt{2})\).
+			\item Thể tích lớn nhất của khối hộp bằng \(16\).
+		\end{enumerate}
+	\end{minipage}%
+	\hfill
+	\begin{minipage}[t]{0.28\textwidth}
+		\vspace{0.5pt}
+	\includegraphics[width=1.2\textwidth]{hinh1238}
+			
+					
+	\end{minipage}
+			\vspace{0.5pt}
+			
+	% --- CÂU 4 ---
+	\noindent
+	\textcolor{mypink}{\textbf{Câu 4.}} Một khu cắm trại ven hồ cung cấp dịch vụ cho thuê lều qua đêm. Với giá thuê 800 000 đồng/lượt, khu cắm trại đón trung bình 2 000 lượt thuê mỗi tháng. Khảo sát cho thấy, cứ tăng giá thuê thêm 50 000 đồng/lượt thì số lượt thuê trong tháng giảm 100 lượt. Giả sử số lượt thuê phụ thuộc tuyến tính vào giá thuê. Trong mô hình tính toán, tổng chi phí mỗi tháng bằng số lượt thuê nhân với 200 000 đồng, bao gồm chi phí vận sinh, điện nước, vận dụng tiêu hao và bảo dưỡng lều. Khu cắm trại cần chọn mức giá thuê để tối ưu lợi nhuận.
+	\begin{enumerate}[label=\alph*), leftmargin=1.2cm, itemsep=0.1cm]
+		\item Nếu giá thuê là 900 000 đồng/lượt thì lợi nhuận mỗi tháng của khu cắm trại là 1 260 000 đồng.
+		\item Gọi \(x\) (nghìn đồng) là số tiền tăng thêm cho mỗi lượt thuê so với mức giá ban đầu, \(0 \le x \le 1000\). Lợi nhuận mỗi tháng của khu cắm trại, tính bằng nghìn đồng, được xác định bởi \(f(x) = -2x^2 + 600x + 1\ 200\ 000\).
+		\item Để đạt lợi nhuận lớn nhất, số lượt thuê mỗi tháng sẽ giảm 400 lượt so với ban đầu.
+		\item Để đạt lợi nhuận lớn nhất, khu cắm trại cần đặt giá thuê ở mức 1 100 000 đồng/lượt.
+	\end{enumerate}
+	
+	\vspace{0.4cm}
+	
+	% --- PHẦN III ---
+	\noindent
+	\colorbox{mypink}{\textcolor{white}{\textbf{PHẦN III.}}} \textbf{\textcolor{mypink}{Câu trắc nghiệm trả lời ngắn}}
+	
+	\noindent
+	\textit{Thí sinh trả lời từ câu 1 đến câu 6.}
+	
+	\vspace{0.4cm}
+	
+	% --- CÂU 1 ---
+	\noindent
+	\textcolor{mypink}{\textbf{Câu 1.}} Một chất điểm chuyển động trên một trục số nằm ngang, chiều dương từ trái sang phải.
+	
+	\begin{center}
+		\begin{tikzpicture}[scale=1]
+			\draw[->, thick] (-2, 0) -- (4, 0);
+			\filldraw (0,0) circle (1.5pt) node[below left] {\(O\)};
+			\filldraw (2,0) circle (1.5pt) node[above right] {\(S(t)\)};
+			\draw[->, thick] (-0.5, 0.3) -- (1, 0.3);
+		\end{tikzpicture}
+	\end{center}
+	
+	\noindent
+	Giả sử vị trí \(S(t)\) của chất điểm trên trục số đã chọn tại thời điểm \(t\) được cho bởi công thức \(S(t) = t^3 - 9t^2 + 15t, \ (t \ge 0)\). Trong đó \(t\) tính bằng giây và \(S(t)\) tính bằng mét. Biết \((a; b)\) là khoảng thời gian có độ dài lớn nhất mà chất điểm chuyển động sang trái. Tính \(P = a^2 + b^2\).
+	
+	\vspace{0.2cm}
+	\noindent
+	\textcolor{mypink}{\(\Rightarrow\)} Đáp số: ........
+	
+	% --- CÂU 2 ---
+	\noindent
+	\textcolor{mypink}{\textbf{Câu 2.}} Cho hàm số \(y = \frac{x+m}{nx+p}\) với \(m, n, p\) là các hằng số, có đồ thị như hình vẽ. Biểu thức \(T = m + 2n - 3p\) có giá trị bằng bao nhiêu?
+	
+	\begin{center}
+		\includegraphics[width=0.4\textwidth]{hinh1248}
+	\end{center}
+	\vspace{0.1cm}
+	\noindent
+	\textcolor{mypink}{\(\Rightarrow\)} Đáp số: ........
+	
+% --- CÂU 3 ---
+\noindent
+% Minipage 1: Chứa nội dung câu hỏi (bên trái)
+\begin{minipage}[t]{0.6\textwidth} 
+	\vspace{0pt} % Bắt buộc phải có để căn chỉnh đỉnh (top alignment) hoạt động đúng
+	\textcolor{mypink}{\textbf{Câu 3.}} Người ta muốn làm một vật rỗng có dạng là một khối lăng trụ tam giác, có đáy là tam giác đều cạnh bằng \(x\) (cm) và mặt bên là các hình chữ nhật có chiều dài bằng \(y\) (cm). Biết rằng thể tích của vật bằng \(200\sqrt{3}\) (cm\(^3\)). Tính kích thước của các cạnh đáy sao cho diện tích toàn phần của vật nhỏ nhất \textit{(Làm tròn đến hàng phần chục)}.
+	
+	\vspace{0.2cm}
+	\noindent
+	\textcolor{mypink}{\(\Rightarrow\)} Đáp số: .........
+\end{minipage}%
+% Dấu % ở trên rất quan trọng để không tạo khoảng trắng thừa giữa 2 minipage
+\hfill % Đẩy minipage thứ 2 sang lề phải
+% Minipage 2: Chứa hình ảnh (bên phải)
+\begin{minipage}[t]{0.38\textwidth} % 0.6 + 0.38 = 0.98 (chừa 2% cho khoảng trống ở giữa)
+	\vspace{-10pt} % Căn chỉnh đỉnh cho đều với minipage bên trái
+	\centering
+	\includegraphics[width=\textwidth]{hinh1249} % Cho ảnh rộng tối đa bằng minipage
+\end{minipage}
+	\vspace{0.4cm}
+	
+	% --- CÂU 4 ---
+	\noindent
+	\textcolor{mypink}{\textbf{Câu 4.}} Cho hàm số \(f(x) = 2^x\) có đồ thị \((C)\) và điểm \(C(0; 2,5)\). Lấy 2 điểm \(A, B\) thuộc \((C)\) sao cho \(OACB\) là hình bình hành. Diện tích tam giác \(ABC\) bằng bao nhiêu?
+	
+	\vspace{0.1cm}
+	\noindent
+	\textcolor{mypink}{\(\Rightarrow\)} Đáp số: ........
+	
+	% --- CÂU 5 ---
+	\noindent
+	\textcolor{mypink}{\textbf{Câu 5.}} Chọn ngẫu nhiên 2 cặp số nguyên \((a;b)\) với \(a,b\) đều thuộc đoạn \([-5;5]\). Tính xác suất để hàm số \(f(x) = x^3 + ax^2 + bx + 1\) có 2 cực trị? (Kết quả làm tròn đến hàng phần trăm).
+
+	\vspace{0.1cm}
+	\noindent
+	\textcolor{mypink}{\(\Rightarrow\)} Đáp số: .........
+	
+	% --- CÂU 6 ---
+	\noindent
+	\textcolor{mypink}{\textbf{Câu 6.}} Cho hình chữ nhật \(ABCD\) có cạnh \(AD\) nằm trên trục hoành và hai đỉnh \(A(0;0)\), \(C(12;5)\). Gọi \(I\) là trung điểm của đoạn thẳng \(AC\). Xét đường tròn \((C)\) có tâm \(I\) và tiếp xúc với trục hoành. Một robot di chuyển từ điểm \(A\) đến điểm \(C\) sao cho quãng đường đi là ngắn nhất, với điều kiện robot không được đi vào miền trong của đường tròn \((C)\) (nhưng có thể di chuyển trên đường bao của đường tròn). Tính độ dài quãng đường ngắn nhất mà robot đã đi (kết quả làm tròn đến hàng đơn vị).
+	
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{hinh1250}
+	\end{center}
+	
+	\vspace{0.1cm}
+	\noindent
+	\textcolor{mypink}{\(\Rightarrow\)} Đáp số: .........
+	
+	\begin{center}
+		\textbf{--- Hết ---}
+	\end{center}
+	
+	
+\end{document}	
